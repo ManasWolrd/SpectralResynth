@@ -1,11 +1,18 @@
-# plugin template
-或许是吧, visual studio/vs code/clion直接打开这个文件夹等cmake配置就行了.  
+# SpectralResynth
+一个从[hiirofox/Resys](https://github.com/hiirofox/Resys)获取想法的插件，还没有开工  
 
-推荐使用Ninja和clang/GCC编译器, 优化比MSVC好很多.  
+# TODO LIST
+## feat
+  - [ ] 制作最基础的测试
+  - [ ] 复音/滑音
+  - [ ] unison
+  - [ ] Chorus/Wander/Graular(没错，ableton SpectralResonator)
+  - [ ] 更多的波形?
+## fix
 
 # 克隆到本地
 ```bash
-git clone --recurse-submodules https://github.com/L-MODEL-TEST/l-model-plugin-template.git
+git clone --recurse-submodules https://github.com/ManasWorld/plugin-template.git
 ```
 或者
 ```bash
@@ -24,7 +31,7 @@ sudo xattr -dr com.apple.quarantine /path/to/your/plugins/plugin_name.lv2
 ## 构建
 
 ```bash
-git clone --recurse-submodules https://github.com/L-MODEL-TEST/l-model-plugin-template.git
+git clone --recurse-submodules https://github.com/ManasWorld/plugin-template.git
 
 # windows
 cmake -G "Visual Studio 17 2022" -DCMAKE_BUILD_TYPE=Release -S . -B ./build
